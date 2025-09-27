@@ -1,5 +1,10 @@
 package com.example.distributed_kv_store.api.dto;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class KeyValueResponse {
     private final String key;
     private final String value;
@@ -15,17 +20,5 @@ public class KeyValueResponse {
         this.key = key;
         this.value = null;
         this.message = message;
-    }
-
-    public String getKey() {
-        return key;
-    }
-
-    public String getValue() {
-        return value;
-    }
-
-    public String getMessage() {
-        return message;
     }
 }
